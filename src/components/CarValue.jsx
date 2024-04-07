@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 
 export const CarValue = () => {
   // instead of getting the whole state object we destructure it here in selector function
+  // this is destructure within destructure
   const totalCost = useSelector(({ cars: { data, searchTerm } }) =>
     data
       .filter((car) =>
